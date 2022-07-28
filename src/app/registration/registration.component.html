@@ -1,0 +1,36 @@
+<h1 mat-dailog-title>STUDENT DETAILS</h1>
+<div mat-dailog-content>
+<form [formGroup]="StudentDetails">
+  <mat-form-field appearance="outline">
+    <mat-label>First Name</mat-label>
+    <input matInput formControlName="Firstname"  placeholder="firstname">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Last Name</mat-label>
+    <input matInput formControlName="Lastname" placeholder="lastname">
+  </mat-form-field>
+
+<mat-form-field appearance="outline">
+  <mat-label>State</mat-label>
+  <mat-select formControlName="State" placeholder="state">
+    <mat-option value="Karnataka">Karnataka</mat-option>
+    <mat-option value="Maharashtra">Maharashtra</mat-option>
+    <mat-option value="Kerela">Kerela</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field appearance="outline">
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker" formControlName="DOB">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<section class="example-section">
+  <label class="example-margin">Gender:</label>
+  <mat-radio-group [(ngModel)]="labelPosition" formControlName="Gender">
+    <mat-radio-button class="example-margin" value="Male">Male</mat-radio-button>
+    <mat-radio-button class="example-margin" value="Female">Female</mat-radio-button>
+  </mat-radio-group>
+</section>
+</form>
+<button mat-raised-button color="accent" (click)="saveStd()">{{actionbtn}}</button>
+</div>

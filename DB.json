@@ -1,0 +1,30 @@
+{
+  "StudentList": [
+    {
+      "Firstname": "rehan",
+      "Lastname": "banglewale",
+      "State": "Maharashtra",
+      "DOB": "2022-07-11T18:30:00.000Z",
+      "Gender": "Male",
+      "id": 4
+    },
+    {
+      "Firstname": "huzefa",
+      "Lastname": "b",
+      "State": "Maharashtra",
+      "DOB": "2022-07-12T18:30:00.000Z",
+      "Gender": "Female",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
